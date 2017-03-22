@@ -3,15 +3,15 @@ $(document).ready(function() {
 
     var nameInput = $("input#name").val();
     var addressInput = $("input#address").val();
-    var teamInput =  $("input#team").val();
-    var sizeInput = $("input#sizeInput").val()
+    var phoneNumberInput =  $("input#phoneNumber").val();
+    var emailInput = $("input#email").val()
 
     $("#receipt").show();
 
     $(".name").text(nameInput);
     $(".address").text(addressInput);
-    $(".team").text(teamInput);
-    $(".size").text(sizeInput);
+    $(".phoneNumber").text(phoneNumberInput);
+    $(".email").text(emailInput);
 
     event.preventDefault();
   });
