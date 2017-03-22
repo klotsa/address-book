@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Address Book</h1>
+      <form id="order">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input id="address" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label for="team">What is your favorite sports team?</label>
+            <label>
+              <input type="radio" name="team" value="Geelong Cats" checked>
+              Geelong Cats
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="team" value="Fremantle Dockers">
+              Fremantle Dockers
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="team" value="St. Kilda Saints">
+              St. Kilda Saints
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="team" value="Essondon">
+              Essondon Bombers
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="size">Select Your Size</label>
+          <select class="form-control" id="size">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Order Now!</button>
+      </form>
+      <div id="receipt"
+        <p>Dear <span class="name"></span>, Thank you for your order! You will receive a <span class="team"></span> <span class="size"></span> jearsey tomorrow!</p>
+        <p>Your order will be shipped to:<br> <span class="name"></span> <br><span class="address">/<span><p>
+      </div>
+    </div>
+  </body>
+</html>
