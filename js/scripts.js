@@ -8,13 +8,10 @@ $(document).ready(function() {
 
     $("h1#addresses").after("<h2>" + nameInput + "</h2><p>" + mailingInput + "</p><p>" + phoneNumberInput + "</p><p>" + emailInput + "</p>");
 
-    console.log(nameInput);
-
-    // $(".name").text(nameInput);
-    // $(".mailing").text(malingInput);
-    // $(".phoneNumber").text(phoneNumberInput);
-    // $(".email").text(emailInput);
-
     event.preventDefault();
+
+    $("h2").click(function () {
+      $("p").toggle();
+    });
   });
 });
