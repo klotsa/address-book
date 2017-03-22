@@ -1,17 +1,19 @@
 $(document).ready(function() {
-  $("form#order").submit(function(event) {
+  $("form#contactInformation").submit(function(event) {
 
     var nameInput = $("input#name").val();
-    var addressInput = $("input#address").val();
+    var mailingInput = $("input#mailing").val();
     var phoneNumberInput =  $("input#phoneNumber").val();
-    var emailInput = $("input#email").val()
+    var emailInput = $("input#email").val();
 
-    $("#receipt").show();
+    $("h1#addresses").after("<h2>" + nameInput + "</h2><p>" + mailingInput + "</p><p>" + phoneNumberInput + "</p><p>" + emailInput + "</p>");
 
-    $(".name").text(nameInput);
-    $(".address").text(addressInput);
-    $(".phoneNumber").text(phoneNumberInput);
-    $(".email").text(emailInput);
+    console.log(nameInput);
+
+    // $(".name").text(nameInput);
+    // $(".mailing").text(malingInput);
+    // $(".phoneNumber").text(phoneNumberInput);
+    // $(".email").text(emailInput);
 
     event.preventDefault();
   });
